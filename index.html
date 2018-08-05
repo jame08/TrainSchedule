@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMTA TS</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-center">FMTA Train Schedule</h1>
+          <p class="lead text-center font-weight-bold">Fine Metropolitan Transportation Authority</p>
+          <spam class="lead font-weight-bold" id = "current-time">00:00 AM</spam>
+        </div>
+      </div>
+
+
+      <div class = "row">
+
+        <div class="col-sm-2 col-md-2">
+        <form>
+            <div class="form-group">
+              <div for="trainSchedule" class= "info font-weight-bold">Information about your trip </div>
+           
+            </div>
+
+            <div class="form-group">
+                <label for="trainSchedule">Train Name</label>
+                <input type="text" class="form-control form-data" id="train-name" placeholder="Train Name">
+              </div>
+
+            <div class="form-group">
+              <label for="trainSchedule2">Destination</label>
+              <input type="text" class="form-control form-data" id="destination" placeholder="Destination">
+            </div>
+            <div class="form-group">
+                <label for="trainSchedule2">First Train (Military Time)</label>
+                <input type="text" class="form-control form-data" id="first-train" placeholder="First Train">
+              </div>
+              <div class="form-group">
+                <label for="trainSchedule2">Frequency Mins</label>
+                <input type="text" class="form-control form-data" id="frequency" placeholder="Frequency">
+              </div>
+            </form>
+
+            <button type="button" class="btn btn-primary submit">Calculate</button>
+
+        </div>
+
+        <div class="col-sm-10 col-md-10">
+
+
+            <table class="table  table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id = "table-body">
+            
+                </tbody>
+              </table>
+        </div>
+          
+
+   
+    
+    </div>
+
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" integrity="sha256-1hjUhpc44NwiNg8OwMu2QzJXhD8kcj+sJA3aCQZoUjg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="assets/javascript/trains.js"></script>
+</body>
+
+</html>

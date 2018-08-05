@@ -1,0 +1,31 @@
+body {
+
+    background-image: url("../images/train.jpg");
+   
+    
+}
+
+.jumbotron {
+
+    background: none;
+    border: none;
+    color: white;
+}
+
+
+
+table{
+    
+    background-color:darkgray;
+    opacity: 0.9;
+    color: black;
+    font-size: 18px;
+ 
+}
+
+.info{
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
